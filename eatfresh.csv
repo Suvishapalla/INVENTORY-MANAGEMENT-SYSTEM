@@ -1,0 +1,12 @@
+pid,category,type,size,stock,sp
+100,beveragescoke,,1ltr,1000,50
+101,bread,modern,100gms,150,20
+102,pasta,maccoroni500g,500gms,200,150
+103,vegetablestomato,,2kg,10kg,20
+104,fruits,mango,2kg,15kg,20
+105,dryfruits,almonds,500gms,15kg,500
+106,meat,chicken,500gms,20kg,350
+107,yogurt,strawberry,50gms,100,30
+108,oil,coconut,500gms,120,70
+109,milk,buffalo,1ltr,50ltrs,40
+110,sweets,kajukatli,1kg,20kg,200

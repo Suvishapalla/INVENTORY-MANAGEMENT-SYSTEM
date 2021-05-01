@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eat Fresh</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+     <!-- Theme style -->
+   <link rel="stylesheet" href="dist/css/adminlte.min.css">
+   <!-- Google Font: Source Sans Pro -->
+   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+   <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> 
+</head>
+
+<body>
+    <body class="hold-transition sidebar-mini">
+    
+        <div class="wrapper">
+            
+            <!-- Navbar -->
+            <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="pushmenu" href="#" role="button"> 
+                                                   <i class="fas fa-bars"></i></a>
+                        </li>
+                    
+                    <li class="nav-item d-none d-sm-inline-block">
+                    <a href="/" class="nav-link">Home</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.navbar -->
+            
+            <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+                <a href="/" class="brand-link">
+                    <img src="logo.jpg"
+                    class="brand-image img-circle elevation-3">
+                       <span class="brand-text font-weight-light">Eat Fresh</span>
+                </a>
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                  <li class="nav-item">
+                    <a href="/create" class="nav-link">
+                      <i class="nav-icon far fa-circle text-success"></i>
+                      <p>Add Product</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/updatestock" class="nav-link">
+                      <i class="nav-icon far fa-circle text-info"></i>
+                      <p class="text">Update Stock</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/deleteproduct" class="nav-link">
+                      <i class="nav-icon far fa-circle text-danger"></i>
+                      <p class="text">Delete product</p>
+                    </a>
+                  </li>
+                  
+                </ul>
+            </nav>
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+<div class="content-wrapper">
+                
+        <section class="content-header">
+            <h1>Add New Product</h1>
+        </section>
+
+    <form action="/AddData" method="POST">
+
+        <section class="content">
+            <div class="card">
+              <div class="card-header">
+                <div class="card-body table-responsive p-0" style="height: 400px;">
+                <form action="/create" method="POST">
+     
+                  <div class="card-body">
+                    <div class="form-group">
+
+        <label for="inputName" >Product Id:</label>
+        <input type="number" placeholder ="Enter product ID"class="form-control" name="pid"><br>
+        
+    </div>
+    <div class="form-group"> 
+
+        <label for="inputDescription">Product Category:</label>&nbsp;
+        <input type="text" placeholder ="Enter category" class="form-control" name="category"><br>
+    
+    </div>
+    <div class="form-group">
+
+        <label>Type of the product:</label>&nbsp;
+        <input type="text" placeholder ="Enter type" id="inputName" class="form-control"  name="type"><br>
+
+    </div>
+    <div class="form-group">
+
+        <label>Size:</label>
+        <input type="number" placeholder ="Enter size" id="inputClientCompany" class="form-control" name="size"><br>
+
+    </div>
+    <div class="form-group">
+
+        <label>Stock:</label>&nbsp;
+        <input type="number" placeholder ="Enter quantity"  id="inputProjectLeader" class="form-control" name="stock" ><br>
+
+    </div>
+    <div class="form-group">
+
+        <label>Cost Price:</label>&nbsp;
+        <input type="number" placeholder ="Enter cost" name="cost" id="inputProjectLeader" class="form-control" ><br>
+
+    </div>
+    <div class="form-group">
+
+        <label>Selling Price:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="number" placeholder ="Enter price" name="sp" id="inputProjectLeader" class="form-control"><br>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-4" style="left: -20px; bottom: 10px;">
+
+
+       <!-- <input type="button" value="AddData" class="btn btn-success float-right">-->
+       <a href="/">
+        <button type="submit" class="btn btn-info float-right">Create</button>
+      </a>
+    </div>
+    <!-- /.card-body -->
+  </div>
+  <!-- /.card -->
+</div>
+</div>
+</section>
+</div>
+
+
+    </form>
+    
+  <!--  <a href="/" class="c2">Home Page</a>-->
+</body>
+</html>
